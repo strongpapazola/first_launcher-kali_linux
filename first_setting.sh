@@ -3,6 +3,7 @@ if [ $confirm = "y" ];then
 	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 	if [ ! "witch gdebi" ];then
   	      echo "[*] gdebi not installed !"
+	      apt install gdebi -y
 	else
 	        gdebi google-chrome-stable_current_amd64.deb
 	fi
@@ -32,3 +33,5 @@ apt install asterisk -y
 apt install mysql -y
 
 apt install samba -y
+
+apt install tilix -y
